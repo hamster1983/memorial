@@ -1,0 +1,6 @@
+PlayfairDisplay Regular
+PlayfairDisplay Bold
+GothamPro Medium
+Ubuntu Regular
+
+#4c1908 - button
