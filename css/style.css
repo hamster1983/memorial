@@ -382,3 +382,113 @@ h3 {
 		padding: 50px 0 20px;
 	}
 }
+
+.primery-sotrud {
+	padding-top: 40px;
+	border-bottom: 20px solid #ddddde;
+	background: url('../img/sotrud-fon.jpg') no-repeat;
+	background-position: 0 100%;
+}
+.primery {
+	padding-bottom: 230px;
+}
+.primery-pic {
+	margin: 0 5px;
+	height: 355px;
+	background-color: #ddddde;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.primery-text {
+	font-size: 22px;
+	line-height: 24px;
+	font-weight: bold;
+	padding: 15px;
+}
+.primery .slick-prev {
+	left: 15px;
+	z-index: 2;
+	top: 42%;
+}
+.primery .slick-next {
+	right: 15px;
+	z-index: 2;
+	top: 42%;
+}
+.primery .slick-prev:before,
+.primery .slick-next:before {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-radius: 2px;
+	transform: rotate(45deg)
+}
+.primery .slick-prev:before {
+	border-bottom: 5px solid black;
+	border-left: 5px solid black;
+}
+.primery .slick-next:before {
+	border-top: 5px solid black;
+	border-right: 5px solid black;
+}
+.primery-download span {
+	font-size: 22px;
+}
+
+.sotrud-item {
+	max-width: 480px;
+	height: 50px;
+	padding: 5px 7px;
+	border-radius: 5px;
+	background-color: #7c7573;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	line-height: 20px;
+	font-family: Gotham, sans-serif;
+	margin: 50px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.sotrud-item:before {
+	content: '';
+	display: block;
+	position: absolute;
+	border: 10px solid transparent;
+	border-top: 20px solid #7c7573;
+	bottom: -30px;
+	right: 70px;
+}
+.sotrud-item.five:before {
+	display: none;
+}
+.sotrud-item.one {
+	left: 50px;
+}
+.sotrud-item.two {
+	left: 180px;
+}
+.sotrud-item.three {
+	left: 320px;
+}
+.sotrud-item.four {
+	left: 460px;
+}
+.sotrud-item.five {
+	left: 600px;
+}
+@media (max-width: 1199px) {
+	.primery {
+		padding-bottom: 70px;
+	}
+	.sotrud-item {
+		left: 0 !important;
+		margin: 50px auto;
+		height: auto;
+		min-height: 50px;
+	}
+}
