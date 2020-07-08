@@ -52,7 +52,7 @@
                     <h1>
                         Производство памятников любой сложности в Москве
                     </h1>
-                    <button class="btn-braun">Позвонить</button>
+                    <button class="btn-braun" data-toggle="modal" data-target="#pamyatniki">Позвонить</button>
                 </div>
             </div>
         </div>
@@ -129,7 +129,7 @@
                 </div>
             </div>
             <h4 class="text-center">17 человек уже получили консультации мастера в этом месяце</h4>
-            <button class="btn-braun">Консультация мастера</button>
+            <button class="btn-braun" data-toggle="modal" data-target="#pamyatniki">Консультация мастера</button>
         </div>
     </section>
 
@@ -215,13 +215,54 @@
 		</div>
 	</section>
 
-	<br><br><br><br><br><br>
+	<section class="questions pt-4 px-2">
+        <h2>Остались вопросы?</h2>
+        <p class="text-center subtitle">оставьте заявку и мастер вам перезвонит</p>
+        <form action="mail.php" method="post">
+            <div class="form-row">
+                <div class="col-12 py-2">
+                    <input type="text" name="name" class="form-control" placeholder="Имя" required>
+                </div>
+                <div class="col-12 py-2">
+                    <input type="text" name="phone" class="form-control" placeholder="Телефон" required>
+                </div>
+                <div class="col-12 py-2">
+                    <button type="submit" name="submit" class="btn-braun">Оставить заявку</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container-md py-3 py-sm-2">
+            <div class="row">
+                <div class="col-lg-7 offset-lg-1 col-sm-7 top-logo d-flex align-items-center justify-content-center justify-content-sm-start pb-2 pb-sm-0">
+                    <a href="/"><img src="img/logo-foot.png" alt=""></a>
+                    <span class="text-white">Гранит-Мемориал</span>
+                </div>
+                <div class="col-lg-4 px-sm-0 col-sm-5 top-contacts">
+                    <div class="mail d-flex align-items-center">
+                        <div class="pic-wrap"><img src="img/mail.png" alt=""></div>
+                        <a href="mailto:info@pamyatnik.ru">info@pamyatnik.ru</a>
+                    </div>
+                    <div class="phone d-flex align-items-center my-1">
+                        <div class="pic-wrap"><img src="img/phone.png" alt=""></div>
+                        <a href="tel:+79622222222">+7 962 222 22 22</a>
+                    </div>
+                    <div class="adress d-flex align-items-center">
+                        <div class="pic-wrap"><img src="img/adress.png" alt=""></div>
+                        <span>улица Фомина, д.10</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 	<div class="modal fade" id="pamyatniki" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog mt-5" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title font-weight-bold w-100 text-center">Введите контакты для отправки информации</h5>
+					<h5 class="modal-title font-weight-bold w-100 text-center">Введите контакты для связи с Вами</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
@@ -235,9 +276,8 @@
 							<div class="col-12 py-2">
 								<input type="text" name="phone" class="form-control" placeholder="Ваш телефон" required>
 							</div>
-							<input type="hidden" name="target" value="is_popup">
 							<div class="col-12 py-2">
-								<input type="submit" name="submit" class="form-control btn-yellow" value="ОСТАВИТЬ ЗАЯВКУ">
+								<button type="submit" name="submit" class="btn-braun">Оставить заявку</button>
 							</div>
 						</div>
 					</form>

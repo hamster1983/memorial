@@ -84,7 +84,7 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-right: 10px;
+	margin-right: 20px;
 }
 .mail .pic-wrap,
 .phone .pic-wrap {
@@ -138,7 +138,7 @@ main .btn-braun {
 		margin: 50px auto;
 	}
 	.mail, .phone, .adress {
-		max-width: 220px;
+		max-width: 230px;
 		margin: 0 auto;
 	}
 }
@@ -387,7 +387,7 @@ h3 {
 	padding-top: 40px;
 	border-bottom: 20px solid #ddddde;
 	background: url('../img/sotrud-fon.jpg') no-repeat;
-	background-position: 0 100%;
+	background-position: 50% 100%;
 }
 .primery {
 	padding-bottom: 230px;
@@ -414,7 +414,7 @@ h3 {
 .primery .slick-next {
 	right: 15px;
 	z-index: 2;
-	top: 42%;
+	top: 45%;
 }
 .primery .slick-prev:before,
 .primery .slick-next:before {
@@ -490,5 +490,35 @@ h3 {
 		margin: 50px auto;
 		height: auto;
 		min-height: 50px;
+	}
+}
+
+.questions .subtitle {
+	font-size: 22px;
+	font-weight: bold;
+}
+.questions form {
+	max-width: 450px;
+	margin: 40px auto 20px;
+}
+.questions [type="text"],
+#pamyatniki [type="text"] {
+	border: 2px solid #4c1908;
+	font-family: Gotham, sans-serif;
+}
+.questions .btn-braun {
+	margin: 30px auto;
+}
+#pamyatniki .btn-braun {
+	margin: 20px auto 0;
+}
+
+footer {
+	padding: 80px 0 100px;
+	background-color: #66666b;
+}
+@media (max-width: 575px) {
+	footer {
+		padding: 40px 0;
 	}
 }
