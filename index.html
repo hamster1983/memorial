@@ -80,9 +80,195 @@
                 </div>
             </div>
             <h4>Рассчитать стоимость за 7 секунд</h4>
-            <button class="btn-braun">Пройти квиз</button>
+            <button class="btn-braun" id="quiz-btn">Пройти квиз</button>
         </div>
     </section>
+	
+	<section class="calculate py-5">
+		<div class="container">
+			<h3>Рассчитайте стоимость производства и установки памятника</h3>
+			<div class="row pt-5">
+				<div class="col-lg-10 offset-lg-1">
+					<div id="memory-quiz" class="carousel slide" data-ride="carousel" data-interval="false" data-touch="false">
+						<p class="step-count">Шаг <span id="current">1</span> из 6</p>
+						<ol class="carousel-indicators">
+							<li data-target="#memory-quiz" data-slide-to="0" class="active"></li>
+							<li data-target="#memory-quiz" data-slide-to="1"></li>
+							<li data-target="#memory-quiz" data-slide-to="2"></li>
+							<li data-target="#memory-quiz" data-slide-to="3"></li>
+							<li data-target="#memory-quiz" data-slide-to="4"></li>
+							<li data-target="#memory-quiz" data-slide-to="5"></li>
+						</ol>
+					  <div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="question d-flex flex-wrap" data-title="need">
+								<div class="col-xl-8">
+									<h5 class="quiz-title">Какой продукт Вас интересует?</h5>
+									<div>
+										<label for="need-1"><input type="radio" name="need" id="need-1" value="Мемориальный комплекс" />
+										Мемориальный комплекс</label>
+									</div>
+									<div>
+										<label for="need-2"><input type="radio" name="need" id="need-2" value="Стела (памятник)" />
+										Стела (памятник)</label>
+									</div>
+									<div>
+										<label for="need-3"><input type="radio" name="need" id="need-3" value="Любые другие изделия из камня (по согласованию с менеджером)" />
+										Любые другие изделия из камня (по согласованию с менеджером)</label>
+									</div>
+								</div>
+								<div class="col-xl-4 d-flex align-items-center">
+									<button class="btn-braun" data-target="#memory-quiz" data-slide-to="1">Далее</button>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="question d-flex flex-wrap" data-title="poroda">
+								<div class="col-xl-8">
+									<h5 class="quiz-title">Какая порода камня Вас интересует?</h5>
+									<div>
+										<label for="poroda-1"><input type="radio" name="poroda" id="poroda-1" value="Габбро-диабаз (топ продаж)" />
+										Габбро-диабаз (топ продаж)</label>
+									</div>
+									<div>
+										<label for="poroda-2"><input type="radio" name="poroda" id="poroda-2" value="Дымовский" />
+										Дымовский</label>
+									</div>
+									<div>
+										<label for="poroda-3"><input type="radio" name="poroda" id="poroda-3" value="Хибинт" />
+										Хибинт</label>
+									</div>
+									<div>
+										<label for="poroda-4"><input type="radio" name="poroda" id="poroda-4" value="Любая другая (по согласованию с менеджер" />
+										Любая другая (по согласованию с менеджер</label>
+									</div>
+								</div>
+								<div class="col-xl-4 d-flex flex-column justify-content-center">
+									<button class="btn-braun my-2" data-target="#memory-quiz" data-slide-to="2">Далее</button>
+									<button class="btn-back my-2" data-target="#memory-quiz" data-slide-to="0">Назад</button>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="question d-flex flex-wrap" data-title="polirovka">
+								<div class="col-xl-8">
+									<h5 class="quiz-title">Какая полировка стелы (памятника) Вас интересует?</h5>
+									<div>
+										<label for="polirovka-1"><input type="radio" name="polirovka" id="polirovka-1" value="Лицевая полировка" />
+										Лицевая полировка</label>
+									</div>
+									<div>
+										<label for="polirovka-2"><input type="radio" name="polirovka" id="polirovka-2" value="Круговая полировка (топ продаж)" />
+										Круговая полировка (топ продаж)</label>
+									</div>
+								</div>
+								<div class="col-xl-4 d-flex flex-column justify-content-center">
+									<button class="btn-braun my-2" data-target="#memory-quiz" data-slide-to="3">Далее</button>
+									<button class="btn-back my-2" data-target="#memory-quiz" data-slide-to="1">Назад</button>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="question d-flex flex-wrap" data-title="gravirovka">
+								<div class="col-xl-8">
+									<h5 class="quiz-title">Какая гравировка стелы (памятника) Вас интересует?</h5>
+									<div>
+										<label for="gravirovka-1"><input type="checkbox" name="gravirovka-1" id="gravirovka-1" value="Портрет" />
+										Портрет</label>
+									</div>
+									<div>
+										<label for="gravirovka-2"><input type="checkbox" name="gravirovka-2" id="gravirovka-2" value="ФИО и даты жизни" />
+										ФИО и даты жизни</label>
+									</div>
+									<div>
+										<label for="gravirovka-3"><input type="checkbox" name="gravirovka-3" id="gravirovka-3" value="Эпитафия" />
+										Эпитафия</label>
+									</div>
+									<div>
+										<label for="gravirovka-4"><input type="checkbox" name="gravirovka-4" id="gravirovka-4" value="Любая другая (по согласованию с менеджером)" />
+										Любая другая (по согласованию с менеджером)</label>
+									</div>
+								</div>
+								<div class="col-xl-4 d-flex flex-column justify-content-center">
+									<button class="btn-braun my-2" data-target="#memory-quiz" data-slide-to="4">Далее</button>
+									<button class="btn-back my-2" data-target="#memory-quiz" data-slide-to="2">Назад</button>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="question d-flex flex-wrap" data-title="ustanovka">
+								<div class="col-xl-8">
+									<h5 class="quiz-title">Потребуется ли Вам установка?</h5>
+									<div>
+										<label for="ustanovka-1"><input type="radio" name="ustanovka" id="ustanovka-1" value="Да" />
+										Да</label>
+									</div>
+									<div>
+										<label for="ustanovka-2"><input type="radio" name="ustanovka" id="ustanovka-2" value="Нет" />
+										Нет</label>
+									</div>
+								</div>
+								<div class="col-xl-4 d-flex flex-column justify-content-center">
+									<button class="btn-braun my-2" data-target="#memory-quiz" data-slide-to="5">Далее</button>
+									<button class="btn-back my-2" data-target="#memory-quiz" data-slide-to="3">Назад</button>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item px-3">
+							<h5 class="quiz-title px-2">Куда вам отправить расчет?</h5>
+							<form id="quiz-form" class="d-flex flex-wrap" action="quiz.php" method="post">
+								<input type="hidden" name="need" value="">
+								<input type="hidden" name="poroda" value="">
+								<input type="hidden" name="polirovka" value="">
+								<input type="hidden" name="gravirovka" value="">
+								<div class="col-lg-6 p-2">
+									<input type="text" name="name" class="form-control" placeholder="Ваше имя" required>
+								</div>
+								<div class="col-lg-6 p-2">
+									<input type="text" name="phone" class="form-control" placeholder="Ваш телефон" required>
+								</div>
+								<div class="col-lg-6 offset-lg-3 p-2">
+									<textarea name="comment" class="form-control" placeholder="Комментарий"></textarea>
+								</div>
+								<div class="col-12 p-2 quiz-radio-wrap d-flex flex-wrap justify-content-center">
+									<label for="zvonok">
+										<input type="radio" name="quiz-radio" value="zvonok" id="zvonok"><br />
+										Звонок<br />
+										<img src="img/zvonok.png" alt="" />
+									</label>
+									<label for="sms">
+										<input type="radio" name="quiz-radio" value="sms" id="sms"><br />
+										СМС<br />
+										<img src="img/sms.png" alt="" />
+									</label>
+									<label for="whatsapp">
+										<input type="radio" name="quiz-radio" value="whatsapp" id="whatsapp"><br />
+										Whatsapp<br />
+										<img src="img/whatsapp.png" alt="" />
+									</label>
+									<label for="viber">
+										<input type="radio" name="quiz-radio" value="viber" id="viber"><br />
+										Viber<br />
+										<img src="img/viber.png" alt="" />
+									</label>
+									<label for="telegram">
+										<input type="radio" name="quiz-radio" value="telegram" id="telegram"><br />
+										Telegram<br />
+										<img src="img/telegram.png" alt="" />
+									</label>
+								</div>
+								<div class="col-lg-6 offset-lg-3 d-flex flex-column align-items-center">
+									<button type="submit" name="submit" class="btn-braun mt-2">УЗНАТЬ ЦЕНУ</button>
+									<button class="btn-back my-3" data-target="#memory-quiz" data-slide-to="4">Назад</button>
+								</div>
+							</form>
+						</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	
 	<section class="iz-chego px-2 pt-4 pb-5">
 		<h2>Из чего складывается цена?</h2>
